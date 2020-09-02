@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "methods" thread-count="5">
+    <listeners>
+        <listener class-name="com.axelerant.tests.utils.TestListener"></listener>
+    </listeners>
+    <test name ="Test">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="com.axelerant.tests.AssignmentTests">
+                <methods>
+                    <include name="HeaderFooterContentTest"></include>
+                    <include name="NewsLetterSubscriptionTest"></include>
+                    <include name="NewsLetterSubscriptionNegativeTest"></include>
+                    <include name="FullCheckOutTest"></include>
+                    <include name="WomensPageAutomationTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
