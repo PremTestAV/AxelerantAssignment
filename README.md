@@ -1,11 +1,11 @@
 # AxelerantAssignment
 
 # Components of Framework
-  Selenium      - API to perform interactions with Web Application
-  Gradle        - Build Automation Tool
-  TestNG        - Testing Framework
-  Java          - Programming Language
-  ExtentReports - Reporting API to help with html reports
+    1.  Selenium      - API to perform interactions with Web Application
+    2.  Gradle        - Build Automation Tool
+    3.  TestNG        - Testing Framework
+    4.  Java          - Programming Language
+    5.  ExtentReports - Reporting API to help with html reports
  
 # Framework Structure
   Framework is configured using the Page Object Model Design framework, with few modifications.
@@ -28,11 +28,11 @@
     3. NewsLetterSubscriptionNegativeTest - Subscribe to the NewsLetter by entering a invalid email ID & click submit button. Validating if the display error message is correct
     4. WomensPageAutomationTest - Navigate to Women's Page from Landing Page & click on different tabs.Validating if the number of items displayed are correct in each of the tab
     5. FullCheckOutTest - Navigate to TShirt Page from Landing Page & add an item to the cart.Validating if the checkout process is complete without any issues
-  
+    
+   The test mentioned in 3.a in the assignment was not attempted as enabling the Filter in WomensPage left the application hanging for a long time. So its not a valid scenario     for test automation
+   
   # TestReport
   Once the tests are executed, the html test results will be present in this folder 
-  
-  # The test mentioned in 3.a in the assignment was not attempted as enabling the Filter in WomensPage left the application hanging for a long time. So its not a valid scenario     for test automation
   
   # testng.xml
   Grouping of all tests to be executed as part of the test.
@@ -41,9 +41,9 @@
   Good practice to keep all the dynamic part of the framework (like application URL, driverpath etc..) in a properties file so it can be changed as and when needed
 
 # Pre-Requisites for this Framework
-  Gradle - Download the latest gradle version, update the homepath in system variables. Ensure command "gradle -v" gives the installed gradle version in command prompt
-  Browser Drivers - Download the necessary drivers(chromedriver, firefoxdriver etc..) needed for execution and update the path in config.properties file
-  Dependent JAR files - No need to download the dependent JAR files(Selenium,ExtentReports, TestNG) etc, as they would be downloaded automatically as they are configured in                               build.gradle file
+    1.  Gradle - Download the latest gradle version, update the homepath in system variables. Ensure command "gradle -v" gives the installed gradle version in command prompt
+    2.  Browser Drivers - Download the necessary drivers(chromedriver, firefoxdriver etc..) needed for execution and update the path in config.properties file
+    3.  Dependent JAR files - No need to download the dependent JAR files(Selenium,ExtentReports, TestNG) etc, as they would be downloaded automatically as they are configured                                   in build.gradle file
   
   # Execute the Tests - Follow the below steps to execute the tests:
     1. Ensure all the above pre-requisites are met.
