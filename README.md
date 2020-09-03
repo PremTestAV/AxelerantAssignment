@@ -20,14 +20,14 @@
 
   # Tests
   The tests are configured and grouped under the axeleranttests package under source sets(src/test)
-  There is a BaseTest.java class which is being extended by other test classes. BaseTest.java is where the driver instantiation , thread configuration for parallel                 execution , teardown after execution happens.
-  AssignmentTests.java is the class where all the tests corresponding to this assignment are configured. There are 5 tests configured in this class which are explained below
+     1.BaseTest.java - Class which is being extended by other test classes. BaseTest.java is where the driver instantiation , thread configuration for parallel                                          execution , teardown after execution happens.
+     2.AssignmentTests.java is the class where all the tests corresponding to this assignment are configured. There are 5 tests configured in this class which are explained             below
   
-    1. HeaderFooterContentTest - Navigate to different pages of the application and verify if header & footer content are correct
-    2. NewsLetterSubscriptionTest - Subscribe to the newsletter by entering a valid email address & validating the message shown is correct
-    3. NewsLetterSubscriptionNegativeTest - Subscribe to the NewsLetter by entering a invalid email ID & click submit button. Validating if the display error message is correct
-    4. WomensPageAutomationTest - Navigate to Women's Page from Landing Page & click on different tabs.Validating if the number of items displayed are correct in each of the tab
-    5. FullCheckOutTest - Navigate to TShirt Page from Landing Page & add an item to the cart.Validating if the checkout process is complete without any issues
+    a. HeaderFooterContentTest - Navigate to different pages of the application and verify if header & footer content are correct
+    b. NewsLetterSubscriptionTest - Subscribe to the newsletter by entering a valid email address & validating the message shown is correct
+    c. NewsLetterSubscriptionNegativeTest - Subscribe to the NewsLetter by entering a invalid email ID & click submit button. Validating if the display error message is correct
+    d. WomensPageAutomationTest - Navigate to Women's Page from Landing Page & click on different tabs.Validating if the number of items displayed are correct in each of the tab
+    e. FullCheckOutTest - Navigate to TShirt Page from Landing Page & add an item to the cart.Validating if the checkout process is complete without any issues
     
    The test mentioned in 3.a in the assignment was not attempted as enabling the Filter in WomensPage left the application hanging for a long time. So its not a valid scenario     for test automation
    
