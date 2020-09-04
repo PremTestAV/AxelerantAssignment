@@ -29,7 +29,7 @@
     d. WomensPageAutomationTest - Navigate to Women's Page from Landing Page & click on different tabs.Validating if the number of items displayed are correct in each of the tab
     e. FullCheckOutTest - Navigate to TShirt Page from Landing Page & add an item to the cart.Validating if the checkout process is complete without any issues
     
-   The test mentioned in 3.a in the assignment was not attempted as enabling the Filter in WomensPage left the application hanging for a long time. So its not a valid scenario     for test automation
+   The test mentioned in 3.a in the assignment was not attempted as enabling the Filter in WomensPage left the application hanging for a long time. So its not a valid scenario     for test automation. Instead test 'd' above has been used.
    
   # TestReport
   Once the tests are executed, the html test results will be present in this folder 
@@ -51,3 +51,9 @@
     3. Currently the configuration is set for parallel execution, but if this needs to be changed, it can be done by updating testng.xml file
     4. Execute the testng.xml file by using Run or Debug command & the tests will be executed
     5. Once the tests are executed, the html results will be available in the TestReport folder
+    
+  # Advantages of Framework:
+    1. Page Object Model is one of the best practices for test automation framework. If there are any changes to the webelement locators, it will be easy to identify & update them at one place rather than multiple places
+    2. Usage of gradle enables to perform build automation & helps integration with CI/CD pipelines easy. If needed, we can create a task for tests in build.gradle file which can be invoked by a CI/CD tool (eg. Jenkins, GitlabCI etc..)
+    3. In future, if there is a need to pass the test data from an external source (like excel, json, xml) then the framework can easily be scaled up by creating a new util class & read the external source
+    4. Extent reports provides extensive information about the test runs in a very presentable html format which can be published across team members
