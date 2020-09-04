@@ -36,6 +36,9 @@
   
   # testng.xml
   Grouping of all tests to be executed as part of the test.
+  The browser name is configured as a parameter & can be updated as needed
+  Listener is used to listen the testng results after every test & pass them to the reporting class
+  Parallel execution is enabled here in Line#3 of testng.xml. If the thread count needs to be modified, it can be done here appropriately
   
   # Config.properties:
   Good practice to keep all the dynamic part of the framework (like application URL, driverpath etc..) in a properties file so it can be changed as and when needed
@@ -44,6 +47,8 @@
     1.  Gradle - Download the latest gradle version, update the homepath in system variables. Ensure command "gradle -v" gives the installed gradle version in command prompt
     2.  Browser Drivers - Download the necessary drivers(chromedriver, firefoxdriver etc..) needed for execution and update the path in config.properties file
     3.  Dependent JAR files - No need to download the dependent JAR files(Selenium,ExtentReports, TestNG) etc, as they would be downloaded automatically as they are configured                                   in build.gradle file
+    4. Java - 1.8 or Higher.
+    5. Browsers - Chrome or FireFox or IE
   
   # Execute the Tests - Follow the below steps to execute the tests:
     1. Ensure all the above pre-requisites are met.
